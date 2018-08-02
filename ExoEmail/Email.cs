@@ -9,7 +9,13 @@ namespace ExoEmail
 {
     public class Email
     {
-        public string Sujet { get; set; }
+        public string Sujet { get; set; } // Ceci est une propriété donc peut être publique cela revient à
+        /* private string_sujet;
+         * public string Sujet
+         * {
+         * get{return _sujet;}
+         * set{_sujet=value;}
+         * }*/
         public string Destinataire { get; set; }
         public string[] DestinatairesEnCopie { get; set; }
         public string Contenu { get; set; }
